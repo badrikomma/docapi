@@ -1,0 +1,7 @@
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.csproj.AssemblyReference.cache
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.GeneratedMSBuildEditorConfig.editorconfig
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.AssemblyInfoInputs.cache
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.AssemblyInfo.cs
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.csproj.CoreCompileInputs.cache
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.MvcApplicationPartsAssemblyInfo.cs
+D:\sw_arch\badrikomma\docapi\obj\Debug\net6.0\docapi.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,87 @@
+\hypertarget{class_excel_like_a_p_i_1_1_session}{}\doxysection{Excel\+Like\+API.\+Session Class Reference}
+\label{class_excel_like_a_p_i_1_1_session}\index{ExcelLikeAPI.Session@{ExcelLikeAPI.Session}}
+
+
+Represents an Excel-\/like session, which can contain multiple workbooks.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_session_ac744c98c707d599ebac64b72aa7c24a6}\label{class_excel_like_a_p_i_1_1_session_ac744c98c707d599ebac64b72aa7c24a6}} 
+{\bfseries Session} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Session class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} \mbox{\hyperlink{class_excel_like_a_p_i_1_1_session_ab721f8a785faaa97584b44d9c8eaf55a}{Open\+Workbook}} (string path)
+\begin{DoxyCompactList}\small\item\em Opens a workbook from the specified file path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} \mbox{\hyperlink{class_excel_like_a_p_i_1_1_session_a7d6f38830cbdc41a28aa42f7ef38737e}{Create\+Workbook}} (string name)
+\begin{DoxyCompactList}\small\item\em Creates a new, empty workbook with the specified name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_excel_like_a_p_i_1_1_session_a613911f1afa51d3a9dd8b60d912d60df}{Close\+Workbook}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} workbook)
+\begin{DoxyCompactList}\small\item\em Closes the specified workbook. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_session_ade51e745f7d4d1ed81916dd97ff88c8a}\label{class_excel_like_a_p_i_1_1_session_ade51e745f7d4d1ed81916dd97ff88c8a}} 
+List$<$ \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} $>$ {\bfseries Workbooks}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the list of open workbooks in this session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an Excel-\/like session, which can contain multiple workbooks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_session_a613911f1afa51d3a9dd8b60d912d60df}\label{class_excel_like_a_p_i_1_1_session_a613911f1afa51d3a9dd8b60d912d60df}} 
+\index{ExcelLikeAPI.Session@{ExcelLikeAPI.Session}!CloseWorkbook@{CloseWorkbook}}
+\index{CloseWorkbook@{CloseWorkbook}!ExcelLikeAPI.Session@{ExcelLikeAPI.Session}}
+\doxysubsubsection{\texorpdfstring{CloseWorkbook()}{CloseWorkbook()}}
+{\footnotesize\ttfamily void Excel\+Like\+API.\+Session.\+Close\+Workbook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}}}]{workbook }\end{DoxyParamCaption})}
+
+
+
+Closes the specified workbook. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em workbook} & The workbook to close.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_session_a7d6f38830cbdc41a28aa42f7ef38737e}\label{class_excel_like_a_p_i_1_1_session_a7d6f38830cbdc41a28aa42f7ef38737e}} 
+\index{ExcelLikeAPI.Session@{ExcelLikeAPI.Session}!CreateWorkbook@{CreateWorkbook}}
+\index{CreateWorkbook@{CreateWorkbook}!ExcelLikeAPI.Session@{ExcelLikeAPI.Session}}
+\doxysubsubsection{\texorpdfstring{CreateWorkbook()}{CreateWorkbook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} Excel\+Like\+API.\+Session.\+Create\+Workbook (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Creates a new, empty workbook with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new workbook.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created workbook.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_session_ab721f8a785faaa97584b44d9c8eaf55a}\label{class_excel_like_a_p_i_1_1_session_ab721f8a785faaa97584b44d9c8eaf55a}} 
+\index{ExcelLikeAPI.Session@{ExcelLikeAPI.Session}!OpenWorkbook@{OpenWorkbook}}
+\index{OpenWorkbook@{OpenWorkbook}!ExcelLikeAPI.Session@{ExcelLikeAPI.Session}}
+\doxysubsubsection{\texorpdfstring{OpenWorkbook()}{OpenWorkbook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook}{Workbook}} Excel\+Like\+API.\+Session.\+Open\+Workbook (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Opens a workbook from the specified file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path of the workbook to open.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The opened workbook, or null if the file was not found.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc\+Controller.\+cs\end{DoxyCompactItemize}

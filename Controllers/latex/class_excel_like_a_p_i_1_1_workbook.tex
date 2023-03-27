@@ -1,0 +1,173 @@
+\hypertarget{class_excel_like_a_p_i_1_1_workbook}{}\doxysection{Excel\+Like\+API.\+Workbook Class Reference}
+\label{class_excel_like_a_p_i_1_1_workbook}\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+
+
+Represents an Excel-\/like workbook, which can contain multiple worksheets.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_a906ebafd19e6996960b474b5c6e0d6b0}{Workbook}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_session}{Session}} session, string path)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Workbook class from the specified file path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_afdd3389e6958317dea9a9b693919d2d9}{Workbook}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_session}{Session}} session, string name)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the Workbook class with the specified name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a0b506a861655c14a35ac75195c976119}\label{class_excel_like_a_p_i_1_1_workbook_a0b506a861655c14a35ac75195c976119}} 
+void {\bfseries Open} ()
+\begin{DoxyCompactList}\small\item\em Opens this workbook. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_ae938fa20f3ff0f43394f867908734847}\label{class_excel_like_a_p_i_1_1_workbook_ae938fa20f3ff0f43394f867908734847}} 
+void {\bfseries Save} ()
+\begin{DoxyCompactList}\small\item\em Saves this workbook. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_a59102fda22d988b136d55fd8f89d865f}{Save\+As}} (string new\+Path)
+\begin{DoxyCompactList}\small\item\em Saves this workbook with a new file path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a7ccb2665aa51369046eaf4b32526f44a}\label{class_excel_like_a_p_i_1_1_workbook_a7ccb2665aa51369046eaf4b32526f44a}} 
+void {\bfseries Close} ()
+\begin{DoxyCompactList}\small\item\em Closes this workbook. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_a7145b2d93388b56d171ed558a1fdd9ef}{Add\+Worksheet}} (string name)
+\begin{DoxyCompactList}\small\item\em Adds a new worksheet to this workbook with the specified name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_a2e250b729135555709e777c5f9d6a4f7}{Delete\+Worksheet}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} worksheet)
+\begin{DoxyCompactList}\small\item\em Deletes the specified worksheet from this workbook. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_abad643d0353e39e29efb9a8d4cb68fe5}{Rename\+Worksheet}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} worksheet, string new\+Name)
+\begin{DoxyCompactList}\small\item\em Renames the specified worksheet in this workbook. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_excel_like_a_p_i_1_1_workbook_a74363a79c46677b6a10d04c803c15b91}{Activate\+Worksheet}} (\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} worksheet)
+\begin{DoxyCompactList}\small\item\em Makes the specified worksheet in this workbook active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_acf7159780e95a54bc52501d98508e333}\label{class_excel_like_a_p_i_1_1_workbook_acf7159780e95a54bc52501d98508e333}} 
+List$<$ \mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} $>$ {\bfseries Worksheets}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the list of worksheets in this workbook. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_aeea0b7758539490724b59c8db5f4a9fd}\label{class_excel_like_a_p_i_1_1_workbook_aeea0b7758539490724b59c8db5f4a9fd}} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the name of this workbook. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a970cb125bf50682c9d868a158dd32ce7}\label{class_excel_like_a_p_i_1_1_workbook_a970cb125bf50682c9d868a158dd32ce7}} 
+string {\bfseries Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the file path of this workbook. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an Excel-\/like workbook, which can contain multiple worksheets. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a906ebafd19e6996960b474b5c6e0d6b0}\label{class_excel_like_a_p_i_1_1_workbook_a906ebafd19e6996960b474b5c6e0d6b0}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!Workbook@{Workbook}}
+\index{Workbook@{Workbook}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{Workbook()}{Workbook()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Excel\+Like\+API.\+Workbook.\+Workbook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_session}{Session}}}]{session,  }\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Workbook class from the specified file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & The session that owns this workbook.\\
+\hline
+{\em path} & The file path of the workbook.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_afdd3389e6958317dea9a9b693919d2d9}\label{class_excel_like_a_p_i_1_1_workbook_afdd3389e6958317dea9a9b693919d2d9}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!Workbook@{Workbook}}
+\index{Workbook@{Workbook}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{Workbook()}{Workbook()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Excel\+Like\+API.\+Workbook.\+Workbook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_session}{Session}}}]{session,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the Workbook class with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & The session that owns this workbook.\\
+\hline
+{\em name} & The name of the workbook.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a74363a79c46677b6a10d04c803c15b91}\label{class_excel_like_a_p_i_1_1_workbook_a74363a79c46677b6a10d04c803c15b91}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!ActivateWorksheet@{ActivateWorksheet}}
+\index{ActivateWorksheet@{ActivateWorksheet}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{ActivateWorksheet()}{ActivateWorksheet()}}
+{\footnotesize\ttfamily void Excel\+Like\+API.\+Workbook.\+Activate\+Worksheet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}}}]{worksheet }\end{DoxyParamCaption})}
+
+
+
+Makes the specified worksheet in this workbook active. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worksheet} & The worksheet to make active.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a7145b2d93388b56d171ed558a1fdd9ef}\label{class_excel_like_a_p_i_1_1_workbook_a7145b2d93388b56d171ed558a1fdd9ef}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!AddWorksheet@{AddWorksheet}}
+\index{AddWorksheet@{AddWorksheet}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{AddWorksheet()}{AddWorksheet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}} Excel\+Like\+API.\+Workbook.\+Add\+Worksheet (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Adds a new worksheet to this workbook with the specified name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the new worksheet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The added worksheet.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a2e250b729135555709e777c5f9d6a4f7}\label{class_excel_like_a_p_i_1_1_workbook_a2e250b729135555709e777c5f9d6a4f7}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!DeleteWorksheet@{DeleteWorksheet}}
+\index{DeleteWorksheet@{DeleteWorksheet}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{DeleteWorksheet()}{DeleteWorksheet()}}
+{\footnotesize\ttfamily void Excel\+Like\+API.\+Workbook.\+Delete\+Worksheet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}}}]{worksheet }\end{DoxyParamCaption})}
+
+
+
+Deletes the specified worksheet from this workbook. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worksheet} & The worksheet to delete.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_abad643d0353e39e29efb9a8d4cb68fe5}\label{class_excel_like_a_p_i_1_1_workbook_abad643d0353e39e29efb9a8d4cb68fe5}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!RenameWorksheet@{RenameWorksheet}}
+\index{RenameWorksheet@{RenameWorksheet}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{RenameWorksheet()}{RenameWorksheet()}}
+{\footnotesize\ttfamily void Excel\+Like\+API.\+Workbook.\+Rename\+Worksheet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_excel_like_a_p_i_1_1_worksheet}{Worksheet}}}]{worksheet,  }\item[{string}]{new\+Name }\end{DoxyParamCaption})}
+
+
+
+Renames the specified worksheet in this workbook. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worksheet} & The worksheet to rename.\\
+\hline
+{\em new\+Name} & The new name of the worksheet.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_excel_like_a_p_i_1_1_workbook_a59102fda22d988b136d55fd8f89d865f}\label{class_excel_like_a_p_i_1_1_workbook_a59102fda22d988b136d55fd8f89d865f}} 
+\index{ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}!SaveAs@{SaveAs}}
+\index{SaveAs@{SaveAs}!ExcelLikeAPI.Workbook@{ExcelLikeAPI.Workbook}}
+\doxysubsubsection{\texorpdfstring{SaveAs()}{SaveAs()}}
+{\footnotesize\ttfamily void Excel\+Like\+API.\+Workbook.\+Save\+As (\begin{DoxyParamCaption}\item[{string}]{new\+Path }\end{DoxyParamCaption})}
+
+
+
+Saves this workbook with a new file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Path} & The new file path to save the workbook to.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc\+Controller.\+cs\end{DoxyCompactItemize}
